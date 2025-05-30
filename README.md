@@ -1,5 +1,5 @@
 Создание фейкового user.
-```php artisan tinker```
+```php artisan tinker```.
 Вставьте этот код для создание токена в консоли:
 ```
 use App\Models\User;
@@ -15,5 +15,5 @@ if (!$user) {
 $token = $user->createToken('vue-app-token')->plainTextToken;
 echo $token;
 ```
-Получив токен некобходимо вставить во frontend часть в переменную apiToken в файле src\views\DomainChecker.vue
+Получив токен некобходимо вставить во frontend часть в переменную apiToken в файле src\views\DomainChecker.vue,
 ссылка на frontend: https://github.com/ErlanKurmanov/frontend-of-checker
